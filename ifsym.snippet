@@ -2,7 +2,7 @@
 # name: ifsym
 # key: ifsym
 # --
-if [ -L "$1" ];
-then
-   $0
+if [ -L "${1:symlink}" ]; then
+   ${2:body}
 fi
+$0

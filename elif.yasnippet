@@ -1,8 +1,6 @@
 # -*- coding: utf-8; mode: snippet -*-
 # name: if empty string
-# key: ifz
+# key: elif
 # --
-if [ -z "${1:condition}" ]; then
-   ${2:body}
-fi
-$0
+elif [[ ${1:condition} ]]; then
+  ${0:statements}

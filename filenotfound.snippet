@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
-# name: iffilenotfound
-# key: iffilenotfound
+# name: if file does not exist
+# key: filenotfound
 # --
-if [ ! -f $1 ];
-then
-   $0
+if [ ! -f "${1:file}" ]; then
+   ${2:then}
 fi
+$0

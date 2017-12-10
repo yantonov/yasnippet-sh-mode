@@ -2,7 +2,7 @@
 # name: iffile
 # key: iffile
 # --
-if [ -f "$1" ];
-then
-   $0
+if [ -f "${1:file}" ]; then
+   ${2:then}
 fi
+$0

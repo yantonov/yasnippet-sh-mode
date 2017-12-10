@@ -2,7 +2,7 @@
 # name: ifdir
 # key: ifdir
 # --
-if [ -d "$1" ];
-then
-   $0
+if [ -d "${1:directory}" ]; then
+   ${2:then}
 fi
+$0

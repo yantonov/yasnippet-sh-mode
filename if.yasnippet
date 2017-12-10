@@ -2,6 +2,7 @@
 # name: if
 # key: if
 # --
-if $1; then
-  $0
+if [ ${1:condition} ]; then
+  ${2:body}
 fi
+$0

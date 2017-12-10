@@ -3,5 +3,6 @@
 # key: ifnarg
 # --
 if [ "$#" -gt 0 ]; then
-   $2
+   ${1:body}
 fi
+$0

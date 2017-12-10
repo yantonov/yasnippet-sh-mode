@@ -2,10 +2,9 @@
 # name: iffileelse
 # key: iffileelse
 # --
-if [ -f $1 ];
-then
-   $2
+if [ -f "${1:file}" ]; then
+   ${2:then}
 else
-   $3
+   ${3:else}
 fi
 $0
