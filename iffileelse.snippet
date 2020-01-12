@@ -3,8 +3,8 @@
 # key: iffileelse
 # --
 if [ -f "${1:file}" ]; then
-   ${2:then}
+   ${2:body}
 else
-   ${3:else}
+   ${3:elsebody}
 fi
 $0
