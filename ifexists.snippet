@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ifexists
+# key: ifexists
+# --
+if test -e "${1:file}" ; then
+   ${2:body}
+fi
+$0
