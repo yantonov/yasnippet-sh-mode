@@ -2,6 +2,7 @@
 # name: ifcommand
 # key: ifcommand
 # --
+# https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
 if command -v ${1:command} &> /dev/null
 then
    ${2:body}
