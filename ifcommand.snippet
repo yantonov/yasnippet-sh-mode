@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ifcommand
+# key: ifcommand
+# --
+if command -v ${1:command} &> /dev/null
+then
+   ${2:body}
+fi
+$0
