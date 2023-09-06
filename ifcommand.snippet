@@ -3,8 +3,5 @@
 # key: ifcommand
 # --
 # https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
-if command -v ${1:command} &> /dev/null
-then
-   ${2:body}
-fi
+command -v ${1:command} >/dev/null 2>&1 || { echo "I require ${2:command} but it's not installed.  Aborting." >&2; exit 1; }
 $0
