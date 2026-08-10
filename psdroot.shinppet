@@ -1,0 +1,7 @@
+# -*- coding: utf-8; mode: snippet -*-
+# name: project root based on script dir
+# key: psdroot
+# --
+SCRIPT_DIR="\$(cd "\$(dirname "\$0")" && pwd)"
+PROJECT_ROOT="$(cd "\${SCRIPT_DIR}/.." && pwd)"
+$0
